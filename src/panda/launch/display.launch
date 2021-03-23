@@ -11,11 +11,11 @@
     <param name="$(arg robot_description)" command="$(find xacro)/xacro '$(find panda)/robots/two_panda_arm_hand.urdf.xacro'"/>
 
     <!-- ?? The semantic description that corresponds to the URDF -->
-    <!-- <param name="$(arg robot_description)_semantic" command="$(find xacro)/xacro '$(find panda_moveit_config)/config/panda_arm_hand.srdf.xacro'" /> -->
+    <!-- <param name="$(arg robot_description)_semantic" command="$(find xacro)/xacro '$(find moveit_resources_panda_moveit_config)/config/panda_arm_hand.srdf.xacro'" /> -->
     
     <!-- ?? Load default settings for kinematics -->
     <!-- <group ns="$(arg robot_description)_kinematics">   
-      <rosparam command="load" file="$(find panda_moveit_config)/config/kinematics.yaml"/>
+      <rosparam command="load" file="$(find moveit_resources_panda_moveit_config)/config/kinematics.yaml"/>
     </group> -->
     <!-- <param name="use_gui" value="True"/> -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
